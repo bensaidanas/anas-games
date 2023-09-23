@@ -7,7 +7,9 @@ const NavBar = () => {
     <HStack justifyContent="space-between" padding="10px">
       <HStack>
         <Image src={logo} boxSize="60px" />
-        <Text fontSize={"3xl"}>Anas Games</Text>
+        <Text fontWeight={"bold"} fontSize={"3xl"}>
+          Anas Games
+        </Text>
       </HStack>
       <ColorModeSwitch />
     </HStack>
