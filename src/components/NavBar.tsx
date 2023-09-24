@@ -1,4 +1,4 @@
-import { Box, HStack, Image, Text } from "@chakra-ui/react";
+import { Box, HStack, Image, Show, Text } from "@chakra-ui/react";
 import logo from "../assets/logo.webp";
 import ColorModeSwitch from "./ColorModeSwitch";
 import SearchInput from "./SearchInput";
@@ -8,9 +8,11 @@ const NavBar = () => {
     <HStack justifyContent="space-between" padding="10px">
       <HStack>
         <Image src={logo} boxSize="60px" />
-        <Text whiteSpace="nowrap" fontWeight={"Bold"} fontSize={"xl"}>
-          Anas Games
-        </Text>
+        <Show above="lg">
+          <Text whiteSpace="nowrap" fontWeight={"Bold"} fontSize={"xl"}>
+            Anas Games
+          </Text>
+        </Show>
       </HStack>
       <Box>
         <SearchInput />
